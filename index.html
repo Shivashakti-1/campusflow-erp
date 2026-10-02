@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .admin-form{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;margin-bottom:22px}.admin-form label{font-size:11px;color:var(--muted);font-weight:700}.admin-form input,.admin-form select{display:block;width:100%;margin-top:7px;border:1px solid var(--line);border-radius:8px;padding:11px;font-size:12px;color:var(--ink);background:white}.admin-table-actions{display:flex;gap:7px}.small-button{border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:10px;color:var(--green);font-weight:700}.small-button.delete{color:#c96f57}.admin-note{font-size:11px;color:var(--muted);background:#fff8e9;border:1px solid #f4e0ae;border-radius:8px;padding:12px;margin-bottom:20px}@media(max-width:900px){.admin-form{grid-template-columns:1fr 1fr}}@media(max-width:550px){.admin-form{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <div id="loginView" class="login-view">
@@ -54,6 +57,7 @@
       <div class="sidebar-label utility-label">YOUR SPACE</div>
       <nav>
         <button class="nav-item" data-page="profile"><span class="nav-icon">♙</span> My profile</button>
+        <button class="nav-item" data-page="admin"><span class="nav-icon">⚙</span> Admin workspace</button>
         <button class="nav-item" data-page="support"><span class="nav-icon">?</span> Help & support</button>
       </nav>
       <div class="sidebar-bottom"><div class="sidebar-tip"><span>✦</span><div><strong>Need a hand?</strong><small>We’re here for you.</small></div><button data-page="support">→</button></div><button id="logoutButton" class="logout-button">↪ <span>Sign out</span></button></div>

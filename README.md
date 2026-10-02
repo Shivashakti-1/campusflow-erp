@@ -20,6 +20,7 @@ npx serve .
 - Fees and payment history
 - Campus notices
 - Student profile and support screens
+- Admin workspace with browser-persisted student CRUD demo
 - Toast feedback for primary actions
 
 The current data is intentionally local demo data. Production use still needs a backend for real authentication, database records, payment processing, role-based access, and API integration.
