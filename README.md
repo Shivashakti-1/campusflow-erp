@@ -24,3 +24,7 @@ npx serve .
 - Toast feedback for primary actions
 
 The current data is intentionally local demo data. Production use still needs a backend for real authentication, database records, payment processing, role-based access, and API integration.
+
+## Supabase setup
+
+Run `supabase-schema.sql` in the Supabase SQL Editor before using the cloud admin workspace. Then create your user under Authentication → Users and set that user's profile role to `admin` in the Table Editor. The browser uses only the publishable key; never add a secret/service-role key to this repository.
