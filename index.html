@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusFlow ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loginView" class="login-view">
+    <div class="login-visual">
+      <div class="brand brand-light"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+      <div class="login-visual-copy">
+        <p class="eyebrow">THE SMARTER CAMPUS</p>
+        <h1>Everything college,<br><em>in one flow.</em></h1>
+        <p>One calm, connected space for students, faculty and campus teams to get things done.</p>
+      </div>
+      <div class="login-orbit orbit-one"></div><div class="login-orbit orbit-two"></div>
+      <div class="login-mini-card"><span class="mini-icon">↗</span><div><strong>92%</strong><small>attendance this month</small></div></div>
+    </div>
+    <div class="login-panel">
+      <div class="login-panel-inner">
+        <div class="mobile-brand brand"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Sign in to your portal</h2>
+        <p class="muted">Use your college credentials to continue.</p>
+        <form id="loginForm" class="login-form">
+          <label>College email<input id="email" type="email" value="arjun.mehta@campus.edu" required /></label>
+          <label>Password<div class="password-field"><input id="password" type="password" value="campus123" required /><button type="button" id="togglePassword" aria-label="Show password">◉</button></div></label>
+          <div class="login-options"><label class="checkbox"><input type="checkbox" checked /> <span>Remember me</span></label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <button class="primary-button full" type="submit">Sign in <span>→</span></button>
+        </form>
+        <p class="demo-hint"><span class="status-dot"></span> Demo account pre-filled · Any credentials will work</p>
+      </div>
+      <p class="login-footer">© 2026 CampusFlow · Need help? <a href="#">Contact support</a></p>
+    </div>
+  </div>
+
+  <div id="appView" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+      <div class="sidebar-label">MAIN MENU</div>
+      <nav id="mainNav">
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-item" data-page="attendance"><span class="nav-icon">◔</span> Attendance</button>
+        <button class="nav-item" data-page="timetable"><span class="nav-icon">▦</span> Timetable</button>
+        <button class="nav-item" data-page="results"><span class="nav-icon">⌁</span> Results</button>
+        <button class="nav-item" data-page="fees"><span class="nav-icon">₹</span> Fees & payments</button>
+        <button class="nav-item" data-page="notices"><span class="nav-icon">◌</span> Notices <span class="nav-badge">3</span></button>
+      </nav>
+      <div class="sidebar-label utility-label">YOUR SPACE</div>
+      <nav>
+        <button class="nav-item" data-page="profile"><span class="nav-icon">♙</span> My profile</button>
+        <button class="nav-item" data-page="support"><span class="nav-icon">?</span> Help & support</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="sidebar-tip"><span>✦</span><div><strong>Need a hand?</strong><small>We’re here for you.</small></div><button data-page="support">→</button></div><button id="logoutButton" class="logout-button">↪ <span>Sign out</span></button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button id="menuToggle" class="icon-button menu-toggle">☰</button><div class="breadcrumb"><span>Student portal</span><b>/</b><strong id="pageCrumb">Overview</strong></div><div class="topbar-actions"><button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button><div class="user-menu" id="userMenu"><div class="avatar">AM</div><div class="user-meta"><strong>Arjun Mehta</strong><span>Computer Science · 3rd year</span></div><span class="chevron">⌄</span></div></div></header>
+      <div id="pageContent" class="page-content"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
