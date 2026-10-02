@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     .admin-form{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;margin-bottom:22px}.admin-form label{font-size:11px;color:var(--muted);font-weight:700}.admin-form input,.admin-form select{display:block;width:100%;margin-top:7px;border:1px solid var(--line);border-radius:8px;padding:11px;font-size:12px;color:var(--ink);background:white}.admin-table-actions{display:flex;gap:7px}.small-button{border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:10px;color:var(--green);font-weight:700}.small-button.delete{color:#c96f57}.admin-note{font-size:11px;color:var(--muted);background:#fff8e9;border:1px solid #f4e0ae;border-radius:8px;padding:12px;margin-bottom:20px}@media(max-width:900px){.admin-form{grid-template-columns:1fr 1fr}}@media(max-width:550px){.admin-form{grid-template-columns:1fr}}
+    .role-chooser h2{font:600 30px 'Space Grotesk';letter-spacing:-1px;margin:0 0 8px}.role-cards{display:grid;gap:12px;margin-top:30px}.role-card{position:relative;text-align:left;border:1px solid var(--line);border-radius:12px;padding:18px 45px 18px 58px;background:white;transition:.2s}.role-card:hover{border-color:#9bcfb7;background:#f5fbf7;transform:translateY(-2px)}.role-card-icon{position:absolute;left:17px;top:18px;font-size:22px;color:var(--green)}.role-card strong,.role-card small{display:block}.role-card strong{font-size:14px}.role-card small{font-size:11px;color:var(--muted);margin-top:4px}.role-arrow{position:absolute;right:17px;top:27px;color:var(--green);font-size:18px}.back-link{display:block;margin:18px auto 0;color:var(--green);font-size:11px}.admin-form{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;margin-bottom:22px}.admin-form label{font-size:11px;color:var(--muted);font-weight:700}.admin-form input,.admin-form select{display:block;width:100%;margin-top:7px;border:1px solid var(--line);border-radius:8px;padding:11px;font-size:12px;color:var(--ink);background:white}.admin-table-actions{display:flex;gap:7px}.small-button{border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:10px;color:var(--green);font-weight:700}.small-button.delete{color:#c96f57}.admin-note{font-size:11px;color:var(--muted);background:#fff8e9;border:1px solid #f4e0ae;border-radius:8px;padding:12px;margin-bottom:20px}@media(max-width:900px){.admin-form{grid-template-columns:1fr 1fr}}@media(max-width:550px){.admin-form{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -27,6 +28,16 @@
     <div class="login-panel">
       <div class="login-panel-inner">
         <div class="mobile-brand brand"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+        <div id="roleChooser" class="role-chooser">
+          <p class="eyebrow">CAMPUSFLOW PORTAL</p>
+          <h2>Who are you signing in as?</h2>
+          <p class="muted">Choose a portal to continue.</p>
+          <div class="role-cards">
+            <button class="role-card" id="studentRole" type="button"><span class="role-card-icon">♙</span><strong>Student</strong><small>Explore the student portal demo</small><span class="role-arrow">→</span></button>
+            <button class="role-card" id="adminRole" type="button"><span class="role-card-icon">⚙</span><strong>Admin</strong><small>Manage students and campus data</small><span class="role-arrow">→</span></button>
+          </div>
+        </div>
+        <div id="loginFields" class="hidden">
         <p class="eyebrow">WELCOME BACK</p>
         <h2>Sign in to your portal</h2>
         <p class="muted">Use your college credentials to continue.</p>
@@ -37,6 +48,8 @@
           <button class="primary-button full" type="submit">Sign in <span>→</span></button>
         </form>
         <p class="demo-hint"><span class="status-dot"></span> Demo account pre-filled · Any credentials will work</p>
+        <button id="backToRoles" class="back-link" type="button">← Choose a different portal</button>
+        </div>
       </div>
       <p class="login-footer">© 2026 CampusFlow · Need help? <a href="#">Contact support</a></p>
     </div>

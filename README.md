@@ -6,6 +6,11 @@ A responsive, self-contained student ERP portal prototype built with plain HTML,
 
 Open the deployed website directly: [CampusFlow ERP](https://shivashakti-1.github.io/campusflow-erp/)
 
+## Demo access
+
+- Choose **Student** for the student demo. Use the pre-filled demo details or any credentials; this mode does not create a real Supabase account.
+- Choose **Admin** to sign in with the protected Supabase account. The configured admin email is `shivashaktidubey@gmail.com`; use the password set in Supabase Authentication.
+
 ## Run it
 
 Open `index.html` in a browser. For local development with a static server, run:
