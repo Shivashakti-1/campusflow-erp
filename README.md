@@ -9,7 +9,6 @@ Open the deployed website directly: [CampusFlow ERP](https://shivashakti-1.githu
 ## Demo access
 
 - Choose **Student** for the student demo. Use the pre-filled demo details or any credentials; this mode does not create a real Supabase account.
-- Choose **Admin** to sign in with the protected Supabase account. The configured admin email is `shivashaktidubey@gmail.com`; use the password set in Supabase Authentication.
 
 ## Run it
 
