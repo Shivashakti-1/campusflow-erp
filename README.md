@@ -2,6 +2,10 @@
 
 A responsive, self-contained student ERP portal prototype built with plain HTML, CSS and JavaScript.
 
+## Live portal
+
+Open the deployed website directly: [CampusFlow ERP](https://shivashakti-1.github.io/campusflow-erp/)
+
 ## Run it
 
 Open `index.html` in a browser. For local development with a static server, run:
