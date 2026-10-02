@@ -9,6 +9,7 @@ Open the deployed website directly: [CampusFlow ERP](https://shivashakti-1.githu
 ## Demo access
 
 - Choose **Student** for the student demo. Use the pre-filled demo details or any credentials; this mode does not create a real Supabase account.
+- The **Admin workspace** is restricted to authenticated administrators. Admin access is managed securely through Supabase for **Shiva Shakti Dubey**.
 
 ## Run it
 
@@ -28,10 +29,10 @@ npx serve .
 - Fees and payment history
 - Campus notices
 - Student profile and support screens
-- Admin workspace with browser-persisted student CRUD demo
+- Supabase-backed admin workspace for student management
 - Toast feedback for primary actions
 
-The current data is intentionally local demo data. Production use still needs a backend for real authentication, database records, payment processing, role-based access, and API integration.
+Student demo content is sample data. Admin student records are stored securely in Supabase with role-based access policies.
 
 ## Supabase setup
 
